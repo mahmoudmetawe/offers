@@ -19,9 +19,12 @@
 
 .reg .contreg {
     background-color: rgb(255, 255, 255);
-    width: 450px;
+    width: 400px;
     height: 80vh;
     border-radius: 5px;
+
+}
+@media (){
 
 }
 
