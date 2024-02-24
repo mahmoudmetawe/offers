@@ -6,6 +6,8 @@
 :root {
     --maincolor: rgb(54, 88, 84);
     --inputcolor:rgba(245, 245, 245, 1);
+    --btnhover :rgba(72, 115, 111, 1);
+    --btncolor : rgb(128, 161, 159);
 }
 
 
@@ -22,30 +24,60 @@
     width: 400px;
     height: 80vh;
     border-radius: 5px;
-
 }
-@media (){
-
-}
-
 .contreg img{
     width: 100px;
     height: 100px;
     margin: 20px 0;
 }
 .contreg input{
-    width: 75%;
+    width: 310px;
+    height: 40px;
     border: none;
     border-radius: 5px;
     background-color: var(--inputcolor);
 }
+.contreg input::placeholder{
+    font-size: small;
+    margin-right: 20px;
+}
 .contreg button{
-    width: 60%;
+    width: 300px;
     height: 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
+    background-color: var(--btncolor);
+    color: white;
 }
+.contreg button:hover{
+    background-color: var(--btnhover);
+}
+.contreg a{
+    text-decoration: none;
+    color: var(--btncolor);
 
+}
+.contreg .forgetpass{
+    margin-left: 35px;
+    padding-top: 5px;
+}
+@media only screen and (max-width: 600px){
+    .reg .contreg {
+        width: 36vh;
+        height: 50vh;
+        margin-top: 23%;
+    } 
+    .contreg .forgetpass{
+        margin-left: 8px;
+        padding-top: 5px;
+    }
+    .contreg input{
+        width: 290px;
+    }
+    .reg{
+        margin-top: -60px;
+    }
+}
 
 /*................................................ start css sidebar................................*/
 .sidenav {
