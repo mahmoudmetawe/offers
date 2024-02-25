@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Cairo", sans-serif;
+
 }
 :root {
     --maincolor: rgb(54, 88, 84);
@@ -129,12 +130,69 @@ border: 1px solid var(--btncolor);
         width: 290px;
     }
 }
-/*-----------------------------------------------start done reg-------------------------------------*/
-
-.click{
-    z-index: -1;
-    background: url(pic/done.png);
+/*................................................ start css sidesignup.............................*/
+.signcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
+.signup .sidesign{
+    width: 200px;
+    height: 90vh;
+    background-color: var(--btnhover);
+    font-size: 11px;
+    color: white;
+    border-radius: 10px;
+}
+.sidesign img{
+    width: 70px;
+    height: 30px;
+}
+.sidesign form div{
+    margin-top: 30px;
+}
+.signup  .contentsign{
+    width: 600px;
+    height: 90vh;
+    background-color: white;
+    border: 1px solid var(--btncolor);
+    border-radius: 10px;
+}
+.contentsign #off{
+    font-weight: bold;
+    color: rgba(204, 52, 52, 1);
+
+}
+.contentsign img{
+    width: 80px;
+    height: 80px;
+}
+.contentsign form {
+    width: 400px;
+}
+.contentsign form input{
+    margin: 9px 0 5px 0;
+    height: 35px;
+    background-color: rgba(245, 245, 245, 1);
+}
+.contentsign form .btn{
+    width: 400px;
+    background-color: var(--btncolor);
+    border-radius: 20px;
+    border: none;
+}
+.contentsign form .btn:hover{
+    background-color: var(--btnhover);
+}
+.contentsign i {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: var(--btnhover);
+}
+
+
 
 /*................................................ start css sidebar................................*/
 .sidenav {
