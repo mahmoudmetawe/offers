@@ -19,7 +19,7 @@ body{
 .reg{
     display: flex;
     justify-content: center;
-    margin-top: 4%;
+    margin-top: 2%;
     padding: 30px 40px;
     
 }
@@ -32,6 +32,7 @@ body{
     border-radius: 5px;
     border: 1px solid var(--inputcolor);
     transition: 1s;
+    position: relative;
 }
 .reg .contreg:hover{
     box-shadow: 0px 0px 20px 30px var(--inputcolor) ;
@@ -43,14 +44,13 @@ body{
 }
 .contreg input{
     width: 310px;
-    height: 40px;
+    height: 37px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--inputcolor);
 }
 .contreg input::placeholder{
     font-size: small;
-    margin-right: 20px;
 }
 .contreg button{
     width: 300px;
@@ -72,11 +72,54 @@ body{
     margin-left: 35px;
     padding-top: 5px;
 }
+
+.contreg a i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: var(--maincolor);
+}
+.contreg .btn{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--btncolor);
+    color: white;
+}
+.contreg .btn:hover{
+    background-color: var(--btnhover);
+}
+.contreg .hide{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(255, 229, 229, 1);
+    border-radius: 10px;
+    position: absolute;
+    top: 158px;
+    right: 45px;
+    color: red;
+    font-weight: 600;
+}
+.contreg span {
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+.contreg .insertcode input{
+width: 40px;
+height: 40px;
+border-radius: 50px;
+margin: 0 7px 20px 7px;
+background-color: transparent;
+border: 1px solid var(--btncolor);
+
+}
 @media only screen and ( max-width: 600px){
     .reg .contreg {
         width: 330px;
         height: 50%;
-        margin-top: 23%;
     } 
     .contreg .forgetpass{
         margin-left: 8px;
@@ -88,6 +131,12 @@ body{
     .reg{
         margin-top: -60px;
     }
+}
+/*-----------------------------------------------start done reg-------------------------------------*/
+
+.click{
+    z-index: -1;
+    background: url(pic/done.png);
 }
 
 /*................................................ start css sidebar................................*/
