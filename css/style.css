@@ -149,9 +149,11 @@ border: 1px solid var(--btncolor);
     width: 70px;
     height: 30px;
 }
-.sidesign form div{
-    margin-top: 30px;
+.sidesign form div {
+    margin-bottom: -9px;
+
 }
+
 .signup  .contentsign{
     width: 600px;
     height: 90vh;
@@ -171,6 +173,9 @@ border: 1px solid var(--btncolor);
 .contentsign form {
     width: 400px;
 }
+.contentsign form input::placeholder{
+    font-size: 12px;
+}
 .contentsign form input{
     margin: 9px 0 5px 0;
     height: 35px;
@@ -181,6 +186,7 @@ border: 1px solid var(--btncolor);
     background-color: var(--btncolor);
     border-radius: 20px;
     border: none;
+    margin-top: 22px;
 }
 .contentsign form .btn:hover{
     background-color: var(--btnhover);
@@ -190,8 +196,116 @@ border: 1px solid var(--btncolor);
     bottom: 15px;
     left: 10px;
     color: var(--btnhover);
+    clip-path:circle(55%);
 }
 
+.imgupload{
+    margin-bottom: 5px;
+    position: relative;
+}
+.imgupload h6{
+    font-size: 12px;
+    color: gray;
+    padding: 3px 0;
+}
+
+.imgupload Label {
+    Height: 100px;
+    Width: 400px;
+    Border: 1.4px dashed #999;
+    border-radius: 10px;
+    color: gray;
+    
+}
+
+.imgupload Label:hover{
+    color: var(--btnhover);
+    Border: 1.5px dashed var(--btnhover);
+    cursor: pointer;
+}
+.endreg{
+    position: absolute;
+    right: 48%;
+    top: 45%;
+    transform: (-50% , -50%);
+}
+.fa-right-from-bracket{
+    position: absolute;
+    right: 75%;
+    top: 85%;
+    transform: (-50% , -50%);
+    font-size: larger;
+    color: var(--btnhover);
+}
+
+
+
+
+@media only screen and (max-width: 838px) {
+    .signup .sidesign {
+        width: 200px;
+    }
+
+    .signup .contentsign {
+        width: 350px;
+    }
+
+    .contentsign form {
+        width: 300px;
+    }
+
+    .contentsign form .btn {
+        width: 300px;
+        margin-top: 10px;
+    }
+    .imgupload Label {
+        Width: 300px;
+    }
+    .endreg{
+        position: absolute;
+        right: 46.5%;
+        top: 50%;
+        transform: (-50% , -50%);
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .signup .sidesign {
+        display: none;
+    }
+
+    .contentsign form {
+        width: 300px;
+    }
+
+    .contentsign form .btn {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .signup  .contentsign{
+        margin-right: 28px;
+        height: 63vh;
+    }
+    .contentsign form input{
+        margin: 10px 0;
+    }
+    .imgupload Label {
+        Width: 300px;
+    }
+    .endreg{
+        position: absolute;
+        right: 20%;
+        top: 30%;
+        transform: (-50% , -50%);
+    }
+    .fa-right-from-bracket{
+        position: absolute;
+        right: 80%;
+        top: 58%;
+        transform: (-50% , -50%);
+    }
+}
 
 
 /*................................................ start css sidebar................................*/
