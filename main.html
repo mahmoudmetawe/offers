@@ -12,26 +12,184 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <title>offers</title>
 </head>
-<body style="direction: rtl;">
+<body>
 
-    <div class="sidebar">
-        <div class="sidenav">
-            <img class=" mx-auto d-block" src="pic/logo/logo.png" alt="">
-            <a href="#">الرئيسية</a>
-            <a href="#">العروض</a>
-            <a href="#">الخصومات</a>
-            <a href="#">الكوبونات</a>
-            <a href="#">فروعي</a>
-            <a href="#">اعداد الحسابات</a>
-            <a href="#">تسجيل الخروج</a>
+    <div class="maincontent">
+
+                <div class="sidenav">
+                    <img class=" mx-auto d-block" src="pic/logo/logo.png" alt="">
+                    <a href="#">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <span>العروض</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-ticket"></i>
+                        <span>الخصومات</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-money-bills"></i>
+                        <span>الكوبونات</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="me-2">فروعي</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>اعداد الحسابات</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <span>تسجيل الخروج</span>
+                    </a>
+                </div>
+
+
+
+        <div class="content mb-5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <img src="pic/navbar/notification.png">
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text" >
+                            <select name="" id="">
+                                <option value="">اختر الفرع</option>
+                                <option value="">carefour</option>
+                                <option value="">fathallah</option>
+                                <option value="">panda</option>
+                                <option value="">alothaim</option>
+                                <option value="">tazag</option>
+                                <option value="">elbokhary</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="container addoffer">
+                <h6 class="my-4 f-bold" style="font-weight: bold;">اضافة عرض جديد</h6>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nameoffer" class="form-label">اسم العرض</label>
+                        <input type="text" class="form-control" id="nameoffer" placeholder="ادخل اسم العرض">
+                    </div>
+
+                    <div class="">
+                        <label for="discoffer" class="form-label">وصف العرض</label>
+                        <textarea class="form-control mb-2" id="discoffer" rows="3" placeholder="وصف العرض"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                    
+                        <div class="date">
+                            <label for="startdate" class="form-label">تاريخ البدأ</label>
+                            <input type="text" class="form-control" id="startdate" placeholder="ادخل تاريخ البدأ"
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                    
+                        <div class="me-5 date">
+                            <label for="enddate" class="form-label">تاريخ الانتهاء</label>
+                            <input type="text" class="form-control" id="enddate" placeholder="ادخل تاريخ الانتهاء" 
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="availbranch" class="d-flex justify-content-between mb-2">
+                            <span>الفروع المتاحة للعرض</span>
+                            <a href="#" class="">اضافة فرع جديد</a>
+                        </label>
+                        <select name="" id="availbranch" style="width: 680px; height: 35px;">
+                            <option value="">فرع رقم 1</option>
+                            <option value="">فرع رقم 2</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="mb-3 date">
+                            <label for="maxperson" class="form-label">اقصى عدد للمستفيدين</label>
+                            <input type="text" class="form-control" id="maxperson" placeholder="حدد عدد الاشخاص">
+                        </div>
+                        <div class="mx-5 date">
+                            <label for="layergoal" class="mb-2" >الفئة المستهدفة</label><br>
+                            <select name="" id="layergoal">
+                                <option value="">شريحة رقم 1</option>
+                                <option value="">شريحة رقم 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="mb-3 ">
+                            <label for="price" class="form-label">السعر الحالي</label>
+                            <input type="text" class="form-control" id="price" placeholder="حدد السعر الحالي(ر.س)">
+                        </div>
+                        <div class="mb-3 mx-5">
+                            <label for="persent" class="form-label">نسبة الخصم</label>
+                            <input type="text" class="form-control" id="persent" placeholder="حدد نسبة الخصم (%)">
+                        </div>
+                        <div class="mb-3">
+                            <label for="afterper" class="form-label">السعر بعد الخصم</label>
+                            <input type="text" class="form-control" id="afterper" placeholder="حدد السعر بعد الخصم (ر.س)">
+                        </div>
+                    </div>
+
+                    <div class="text-end addimg mb-3">
+                        <h6 style="font-size: 13px; font-weight: bold;">اضافة صور للعرض</h6>
+                        <input class="visually-hidden" type="file" id="addimgoffer" />
+                        <label for="addimgoffer" class="text-center">
+                            <img src="pic/side/gallery.png" alt="" style="width: 20px;height: 20px; margin-top: 20px;"><br>
+                            <span>قم بارفاق صورة لا تتجاوز 3.5 ميجا بايت</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="offerinclud" class="form-label">العرض يشمل</label>
+                        <input type="email" class="form-control" id="offerinclud" placeholder="يشمل..">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="notinclud" class="form-label">العرض لا يشمل</label>
+                        <input type="email" class="form-control" id="notinclud" placeholder="لا يشمل..">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="conditionuse" class="form-label">شروط الاستخدام</label>
+                        <textarea class="form-control" id="conditionuse" rows="5" placeholder="شروط الاستخدام"></textarea>
+                    </div>
+
+                    <div class="my-3">
+                        <button class="btn " type="submit" style="width: 200px;">الاضافة و الحفظ</button>
+                    </div>
+                </form>
+            
+            
+            
+            
+            </section>
+
+
+            <footer></footer>
         </div>
     </div>
 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jscode.js"></script>
 
-    <nav></nav>
-    <header></header>
-    <section></section>
-    <footer></footer>
-    
 </body>
 </html>

@@ -1,19 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Cairo", sans-serif;
-
+    font-family: Bahij_TheSansArabic-Bold ;
+    direction: rtl;
+}
+@font-face{
+    src: url(/fonts/Bahij_TheSansArabic-Bold.ttf);
+    font-family:Bahij_TheSansArabic-Bold ;
 }
 :root {
     --maincolor: rgb(54, 88, 84);
     --inputcolor:rgba(245, 245, 245, 1);
     --btnhover :rgba(72, 115, 111, 1);
     --btncolor : rgb(128, 161, 159);
+    --bordercolor:rgb(216, 216, 216);
 } 
 body{
     background-position: center;
     
 }
+.maincontent{
+    display: flex;
+}
+
 
 
 /*................................................ start css reg................................*/
@@ -308,40 +317,62 @@ border: 1px solid var(--btncolor);
 }
 
 
+
+
+/*.................................................. start css navbar................................*/
+
+.content .navbar{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid var(--bordercolor);
+    
+}
+.navbar .navbar-text select{
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.navbar-brand .fa-bars:hover{
+    color: var(--btnhover);
+} 
+/*.................................................. end   css navbar................................*/
+
 /*................................................ start css sidebar................................*/
+
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+    height:inherit;
+    width: 205px;
     background-color:var(--maincolor);
     overflow-x: hidden;
     padding-top: 20px;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 13px;
     color:white;
     display: block;
-    padding-right: 15px;
+    padding-right: 20px;
+    transition: .3s;
 }
-.sidenav a img{
+.sidenav a span {
+    padding-right: 10px;
+}
+.sidenav img{
     width: 50%;
-    height: 20px;
+    height: 10px;
 }
 
 .sidenav a:hover {
     background-color: #f1f1f1;
     color:var(--maincolor) ;
-}
-
-.main {
-    margin-left: 160px;
-    padding: 0px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    
 }
 
 @media screen and (max-height: 450px) {
@@ -355,9 +386,59 @@ border: 1px solid var(--btncolor);
 }
 .sidenav img{
     width: 80px ;
-    height: 40px;
+    height: 35px;
     margin-bottom: 35px;
     margin-top: -10px;
     
 }
 /*.................................................. end css sidebar................................*/
+.content{
+    width: 100%;
+    height: max-content;
+}
+.content .addoffer{
+    border: 1px solid var(--bordercolor);
+    width: calc(100% - 50px);
+    height: min-content;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.content .addoffer label{
+    font-size: 13px;
+    font-weight: bold;
+}
+.addimg label{
+    Height: 100px;
+    Width: 100px;
+    Border: 1.4px dashed #999;
+    border-radius: 10px;
+    color: gray;
+    
+}
+.content .addoffer form{
+    width: calc(100% - 350px);
+}
+.addoffer form .date input {
+    width: 315px;
+}
+.addoffer form .date select{
+    width: 317px;
+    height: 35px;
+}
+.addoffer form select{
+    background-color: white;
+    border: 1px solid var(--bordercolor);
+    border-radius: 5px;
+}
+.addoffer form select option{
+    padding-right: 10px;
+}
+.addoffer form button{
+    background-color: var(--btncolor);
+    border: none;
+    color: white;
+}
+.addoffer form button:hover{
+    background-color: var(--btnhover);
+    color: white;
+}
